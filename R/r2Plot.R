@@ -1,4 +1,4 @@
-### Title:    R2 efficiency plotting function  
+### Title:    R-squared efficiency plotting function  
 ### Author:   Pavel Panko
 ### Created:  2016-MAY-01
 ### Modified: 2018-DEC-07
