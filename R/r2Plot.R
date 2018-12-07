@@ -9,7 +9,7 @@ derivative <- function(x, y) diff(y)/diff(x)
 ## Main r-squared plotting function
 r2Plot <- function(r2, cumulative = FALSE, ...) {
     ## Calculate non-cumulative r-squared
-    if(cumulative)
+    if(!cumulative)
         r2 <- c(r2[1], diff(r2))
     ## Calculate second derivative
     x <- seq_along(r2)
