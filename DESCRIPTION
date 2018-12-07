@@ -1,0 +1,9 @@
+Package: plotTools
+Type: Package
+Title: Convenient plotting tools
+Version: 1.0
+Date: 2018-12-07
+Author: Pavel Panko 
+Maintainer: <pavel.panko@ttu.edu>
+Description: Currently supports R-squared and multilevel trajectory plots
+License: What license is it under?
