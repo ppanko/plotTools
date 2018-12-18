@@ -1,7 +1,7 @@
 ### Title:    R-squared efficiency plotting function  
 ### Author:   Pavel Panko
 ### Created:  2016-MAY-01
-### Modified: 2018-DEC-07
+### Modified: 2018-DEC-17
 
 ## Convenience function for calculating derivatives 
 derivative <- function(x, y) diff(y)/diff(x)
