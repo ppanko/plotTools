@@ -24,6 +24,7 @@ r2Plot <- function(r2, cumulative = TRUE, ...) {
     plot(r2, ...)
     abline(v = drop, col = "red")
     abline(h = r2[slide], col = "blue")
+    mtext(drop, side = 1, at = drop, col = "red")
     ## Print report
     msg <- strwrap(sprintf("Biggest drop in variance contribution happens at
            component %i, below average contributions start after component %i", drop, slide),
