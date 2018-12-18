@@ -19,7 +19,7 @@ r2Plot <- function(r2, cumulative = TRUE, ...) {
     drop   <- elbows[which(diff(elbows) == max(diff(elbows)))]
     ## Average efficiency
     cntr <- abs(r2 - mean(r2))
-    slide <- which(cntr == min(cntr))
+    slide <- min(which(cntr == min(cntr)))
     ## Create plot
     plot(r2, ...)
     abline(v = drop, col = "red")
