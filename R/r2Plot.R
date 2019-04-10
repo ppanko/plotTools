@@ -15,7 +15,7 @@ r2Plot <- function(r2, cumulative = TRUE, ...) {
     x <- seq_along(r2)
     d2 <- derivative(x[-1] - diff(x)/2, derivative(x, r2))
     ## Biggest drop-off
-    elbows <- sapply(seq_along(d2), function(x) which(d2 == max(d2[x:length(d2)])))
+    elbows <- sapply(seq_along(d2), function(x) which(d2 == max(d2[x:length(d2)]))[1])
     drop   <- elbows[which(diff(elbows) == max(diff(elbows)))]
     ## Average efficiency
     cntr <- abs(r2 - mean(r2))
